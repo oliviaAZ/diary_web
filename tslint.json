@@ -1,0 +1,38 @@
+{
+  "defaultSeverity": "warning",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["tslint:recommended"],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "no-unused-expression": false,
+    "prefer-const": false,
+    "quotemark": [true, "double"],
+    "indent": [true, "spaces", 2],
+    // "keyword-spacing": ["error", {
+    //   "before": false
+    // }],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": false,
+    "no-empty": true,
+    "no-console": false,
+    "no-empty-interface": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "array-type": false,
+    "max-line-length": [true, 200],
+    // "trailing-comma": [true, { //对尾随逗号的校验
+    //   "multiline": {
+    //     "objects": "ignore",
+    //     "arrays": "never",
+    //     "functions": "never",
+    //     "typeLiterals": "ignore"
+    //   }
+    // }],
+    "arrow-parens": false
+  }
+}
